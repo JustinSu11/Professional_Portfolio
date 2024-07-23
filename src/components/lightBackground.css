@@ -1,0 +1,106 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    height: auto;
+    overflow: auto;
+}
+
+.bubbles {
+    position: fixed;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    background: #1a2a6c;
+    background: -webkit-linear-gradient(to top, #ffffff, #b7c7ff);
+    background: linear-gradient(to top, #ffffff, #b7c7ff);
+    overflow: hidden;
+    z-index: -1;
+}
+
+.bubble {
+    position: absolute;
+    bottom: 10px;
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(135deg, purple, rgb(0, 0, 255));
+    border-radius: 69% 64% 67% 74%;
+    border: 0.1px solid black;
+    animation: float 8s infinite ease-in-out, moveUpDown 5s infinite ease-in-out, rotate 10s linear infinite;
+    transform-origin: center;
+}
+
+.bubble:nth-child(2) {
+    width: 180px;
+    height: 180px;
+    animation-duration: 8s;
+    bottom: 480px;
+    left: 8%;
+}
+
+.bubble:nth-child(3) {
+    width: 140px;
+    height: 140px;
+    animation-duration: 6s;
+    bottom: 290px;
+    left: -5%;
+}
+
+.bubble:nth-child(4) {
+    width: 110px;
+    height: 110px;
+    animation-duration: 6s;
+    bottom: 10px;
+    right: 0;
+}
+
+.bubble:nth-child(5) {
+    width: 180px;
+    height: 180px;
+    animation-duration: 8s;
+    bottom: 430px;
+    right: 1%;
+}
+
+.bubble:nth-child(6) {
+    width: 220px;
+    height: 220px;
+    animation-duration: 10s;
+    bottom: 190px;
+    right: -10%;
+}
+
+.bubble:nth-child(7) {
+    width: 220px;
+    height: 220px;
+    animation-duration: 10s;
+    bottom: 490px;
+    right: 45%;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) translateX(0) scale(1);
+    }
+    50% {
+        transform: translateY(-20%) translateX(20%) scale(1.2) skew(-10deg, 10deg);
+    }
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50%)
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
