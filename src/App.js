@@ -1,9 +1,9 @@
-import Intro from './components/Intro.js'
+import MainLayout from './components/MainLayout.js'
 import './App.css';
 
 function App() {
   return (
-    <Intro />
+    <MainLayout />
   );
 }
 

@@ -1,31 +1,19 @@
 import React from 'react'
-import { AppBar, Toolbar, Typography, Container } from '@mui/material'
-import { styled } from '@mui/system'
 import './header.css'
 
-const StyledTypography = styled(Typography)(({ theme }) => ({
-    color: 'black',
-    fontFamily: 'monospace',
-    '& .initial': {
-        fontSize: '150%',
-        lineHeight: 1,
-        fontWieght: 700,
+const Header = ({ setView }) => {
+    const handleClick = (newView) => {
+        setView(newView)
     }
-}))
-
-const Header = () => {
 
     return (
-        <AppBar className='header-appbar'>
-            <Container maxWidth='xl'>
-                <Toolbar disableGutters>
-                    <StyledTypography variant='h4'>
-                        <span className='initial'>J</span>ustin <span className='initial'>N</span>guyen
-                    </StyledTypography>
-                </Toolbar>
-            </Container>
-        </AppBar>
+        <div id='navbar'>
+            <a href='#contact' onClick={() => handleClick('Contact')}>Contact</a>
+            <a href='#works' onClick={() => handleClick('Works')}>Works</a>
+            <a href='#home' onClick={() => handleClick('Home')}>Home</a>
+        </div>
     )
+
 }
 
 export default Header

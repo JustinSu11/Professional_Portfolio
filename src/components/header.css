@@ -1,5 +1,16 @@
-.header-appbar {
-    background: transparent;
-    box-shadow: none;
-    position: fixed;
+#navbar {
+    overflow: hidden;
+}
+
+#navbar a {
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 14px;
+    font-weight: bold;
+    font-size: 150%;
+    text-decoration: none;
+    background: linear-gradient(180deg, rgb(250, 202, 252), rgb(240, 71, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
