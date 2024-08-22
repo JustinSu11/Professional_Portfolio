@@ -3,7 +3,7 @@ import './works.css'
 
 const Works = () => {
     return (
-        <div className='work-box'>
+        <div className='works-box'>
             <img src='/Works-WeatherApp.png' alt='Justin Nguyen' />
         </div>
     )

@@ -1,4 +1,6 @@
-.work-box {
-    margin: 8% 15% 8% 15%;
+.works-box {
+    margin: 5% 15% 5% 15%;
     border: 0.5px solid;
+    object-fit: contain;
+    overflow: hidden;
 }
