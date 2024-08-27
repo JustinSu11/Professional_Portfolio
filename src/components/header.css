@@ -10,7 +10,8 @@
     font-weight: bold;
     font-size: 150%;
     text-decoration: none;
-    background: linear-gradient(180deg, rgb(250, 202, 252), rgb(240, 71, 255));
+    background-color: #685454;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }

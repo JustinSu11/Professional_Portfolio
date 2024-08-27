@@ -1,6 +1,47 @@
-.works-box {
-    margin: 5% 15% 5% 15%;
+.works-preview {
+    margin: 5% 15%;
     border: 0.5px solid;
     object-fit: contain;
     overflow: hidden;
+    border-radius: 5px;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(6, 2, 61, 0.705), rgba(40, 4, 48, 0.7));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.work-name {
+    background: linear-gradient(180deg, rgb(250, 202, 252), rgb(240, 71, 255));
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.image-container:hover .overlay {
+    transform: translateX(0);
 }

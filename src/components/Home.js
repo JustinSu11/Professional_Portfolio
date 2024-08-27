@@ -4,10 +4,10 @@ import { styled } from '@mui/system'
 import { Typography } from '@mui/material'
 
 const StyledTypography = styled(Typography)(({ theme }) => ({
-    color: 'white',
+    color: '#3a4750',
     fontFamily: 'monospace',
     '& .red-text': {
-        color: '#f26444',
+        color: '#e84a5f',
         fontSize: '350%',
         lineHeight: 1,
         fontWeight: 700,
@@ -15,12 +15,12 @@ const StyledTypography = styled(Typography)(({ theme }) => ({
         paddingLeft: '12%',
     },
     '& .green-text': {
-        color: '#5ec99e',
+        color: '#e79e85',
         fontSize: '350%',
         lineHeight: 1,
         fontWeight: 700,
     },
-    '& .white-text': {
+    '& .grey-text': {
         fontSize: '150%',
     },
     '& .name': {
@@ -36,7 +36,7 @@ const Home = () => {
             <StyledTypography>
                 <span className='name grow'>Justin Nguyen</span>
                 <span className='red-text grow'>Front End Developer</span>
-                <span className='white-text'> & </span>
+                <span className='grey-text'> & </span>
                 <span className='green-text grow'>Software Engineer</span>
             </StyledTypography>
         </div>
