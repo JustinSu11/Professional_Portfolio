@@ -8,7 +8,6 @@ const Header = ({ setView }) => {
 
     return (
         <div id='navbar'>
-            <a href='#contact' onClick={() => handleClick('Contact')}>Contact</a>
             <a href='#works' onClick={() => handleClick('Works')}>Works</a>
             <a href='#home' onClick={() => handleClick('Home')}>Home</a>
         </div>
