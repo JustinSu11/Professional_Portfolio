@@ -16,14 +16,14 @@ const modalStyle = {
     gap: 2,
 };
 
-const modalButtonStyle = {
+const modalOpenButtonStyle = {
     position: 'absolute',
     top: '90%',
     bgcolor: 'background.paper',
     borderRadius: '25px'
 }
 
-const buttonContainer = {
+const centeredButtonContainer = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -36,8 +36,8 @@ const ContactModal = () => {
 
     return (
         <div>
-            <Box sx={buttonContainer}>
-                <Button onClick={handleOpen} sx={modalButtonStyle}>Get in touch</Button>
+            <Box sx={centeredButtonContainer}>
+                <Button onClick={handleOpen} sx={modalOpenButtonStyle}>Get in touch</Button>
             </Box>
             <Modal open={modalVisibility} onClose={handleClose}>
                 <Box sx={modalStyle} component='form'>
@@ -61,6 +61,9 @@ const ContactModal = () => {
                             <TextField fullWidth='true' id='outlined-multiline-flexible' multiline rows={3} maxRows={4} label='Collaboration details' variant='outlined'/>
                         </Grid>
                     </Grid>
+                    <Box sx={centeredButtonContainer}>
+                        <Button color='primary'>Submit</Button>
+                    </Box>
                 </Box>
             </Modal>
         </div>
